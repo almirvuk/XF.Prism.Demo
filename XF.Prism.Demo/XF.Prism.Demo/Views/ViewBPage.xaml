@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.Prism.Demo.Views.ViewBPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="8">
+            
+            <Label Text="Welcome to View B"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Go Back" Command="{Binding GoBackCommand}" />
+            <Button Text="Show Dialog" Command="{Binding ShowDialogCommand}"/>
+            <Button Text="Change Title" Command="{Binding ChangeTitleCommand}"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
